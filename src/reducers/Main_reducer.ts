@@ -10,12 +10,12 @@ const initState : MainState= {
     value : ''
 }
 
-const Main = (state:MainState = initState, action : MainAction) => {
+const main = (state:MainState = initState, action : MainAction) => {
 
     switch (action.type) { 
         
         case A.SETVALUE:
-            return { value : action.payload }
+            return { ...state, value : action.payload }
 
         default:
             return state
@@ -24,4 +24,4 @@ const Main = (state:MainState = initState, action : MainAction) => {
 
 }
 
-export default Main
+export default main
