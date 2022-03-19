@@ -19,7 +19,8 @@ const main = (state:MainState = initState, action : MainAction) => {
         case A.SETVALUE:
             console.log('여기는 state ',action.payload)
             return { ...state, value: action.payload }
-            case A.SETCHK:
+        
+        case A.SETCHK:
             console.log('여기는 state ',action.payload)
             return { ...state, ischecked: action.payload }
         
