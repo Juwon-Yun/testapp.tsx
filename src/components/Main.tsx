@@ -5,8 +5,8 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
 import { useHistory } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { RootState } from "./reducers";
-import * as A from './actions/Main_action'
+import { RootState } from "../reducers";
+import * as A from '../actions/Main_action'
 
 const Main = () => { 
 
