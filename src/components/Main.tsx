@@ -40,6 +40,8 @@ const Main = () => {
         
         localStorage.setItem('test_chk', JSON.stringify( {key : idVal, ischeck : state.ischecked } ) as string )
     }
+    
+    // checked = { state.ischecked } 
 
     return (
         <div>
@@ -52,7 +54,7 @@ const Main = () => {
             <TextField id="textBox" label="Standard" variant="standard" />
             <br></br>
             <br></br>
-            <FormControlLabel control={<Checkbox id="chk" checked={  state.ischecked } onChange={onChangeChkBox} />} label="Remember" />
+            <FormControlLabel control={<Checkbox id="chk" onChange={onChangeChkBox} />} label="Remember" />
             <br></br>
             <Button variant="contained" onClick={() => { clickBtn(); history.push('/home') }}>넘어가기</Button>
         </div>
