@@ -5,6 +5,7 @@ import { Route, Switch } from 'react-router-dom'
 import Home from './Home'
 import UseInput from './useInput';
 import UseMemo from './useMemo'
+import UseCallback from './useCallback'
 
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
         </Route>
         <Route path={"/useMemo"}>
           <UseMemo></UseMemo>
+        </Route>
+        <Route path={"/useCallback"}>
+          <UseCallback></UseCallback>
         </Route>
       </Switch>
     </div>
