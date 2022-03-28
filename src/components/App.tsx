@@ -4,6 +4,7 @@ import Main from './Main'
 import { Route, Switch } from 'react-router-dom'
 import Home from './Home'
 import UseInput from './useInput';
+import UseMemo from './useMemo'
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
         </Route>
         <Route path={"/useInput"}>
           <UseInput></UseInput>
+        </Route>
+        <Route path={"/useMemo"}>
+          <UseMemo></UseMemo>
         </Route>
       </Switch>
     </div>
